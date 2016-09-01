@@ -45,6 +45,7 @@
 	define('QA_MYSQL_USERNAME', $credentials['user']);
 	define('QA_MYSQL_PASSWORD', $credentials['password']);
 	define('QA_MYSQL_DATABASE', $credentials['database']);
+        define('QA_MYSQL_PORT', $credentials['port']);
 
 /*
 	Ultra-concise installation instructions:
