@@ -57,7 +57,10 @@ Gideon
 Deploying to HPE Helion Stackato
 ---------------------
 
-    $ stackato push -n
+    $ cf push --no-start
+    $ cf create-service <mysql-service-name> default question2answer-db
+    $ cf bind-service question2answer question2answer-db
+    $ cf restart question2answer
 
 
 [Q2A]: http://www.question2answer.org/
